@@ -11,13 +11,14 @@ export default function Home() {
           Hey, I&apos;m Alvin
         </h1>
         <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
-          Software engineer based in Sydney, Australia. I build backend systems
-          and APIs. This is where I write about things I&apos;m working on and
-          learning.
+          Software engineer at Snap in Sydney, working on the video calling
+          experience in Snapchat. Primarily backend and operations — distributed
+          systems, reliability, and the occasional cross-team project that bleeds
+          into iOS, Android, or web.
         </p>
         <div className="flex gap-4 text-sm">
           <a
-            href="https://github.com/alvinfujito"
+            href="https://github.com/alvinvin7"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
@@ -26,7 +27,7 @@ export default function Home() {
           </a>
           <span className="text-neutral-300 dark:text-neutral-700">·</span>
           <a
-            href="https://linkedin.com/in/alvinfujito"
+            href="https://www.linkedin.com/in/alvinfujito"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"

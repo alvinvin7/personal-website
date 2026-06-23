@@ -16,7 +16,7 @@ const projects: Project[] = [
     name: "Personal Website",
     description:
       "This site. Built with Next.js 15, Tailwind CSS v4, and deployed to Cloudflare Pages.",
-    url: "https://github.com/alvinfujito/personal-website",
+    url: "https://github.com/alvinvin7/personal-website",
     tags: ["Next.js", "Tailwind", "Cloudflare"],
   },
   // Add more projects here

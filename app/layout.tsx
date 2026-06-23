@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     template: "%s | Alvin Fujito",
   },
   description: "Software engineer based in Sydney, Australia.",
+  metadataBase: new URL("https://alvinfujito.com"),
+  openGraph: {
+    siteName: "Alvin Fujito",
+    locale: "en_AU",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

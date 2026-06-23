@@ -115,24 +115,61 @@ export default function About() {
         </section>
 
         <section>
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-4">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-6">
             Skills
           </h2>
-          <div className="flex flex-wrap gap-2">
+          <div className="space-y-5">
             {[
-              "Distributed Systems",
-              "Backend Engineering",
-              "Incident Management",
-              "Software Design",
-              "iOS / Android",
-              "Operations",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="text-sm px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full"
-              >
-                {skill}
-              </span>
+              {
+                label: "Languages",
+                skills: ["Go", "Python", "TypeScript", "Java", "C", "Bash", "SQL"],
+              },
+              {
+                label: "Infrastructure & Ops",
+                skills: ["Kubernetes", "AWS", "Incident Management", "Infrastructure", "Git"],
+              },
+              {
+                label: "Engineering",
+                skills: [
+                  "Software Design",
+                  "Software Development",
+                  "Distributed Systems",
+                  "Technical Solution Design",
+                  "Data Structures",
+                  "Algorithms",
+                ],
+              },
+              {
+                label: "AI",
+                skills: ["Anthropic Claude", "Claude Code Subagents"],
+              },
+              {
+                label: "Other",
+                skills: [
+                  "Teaching",
+                  "Technical Writing",
+                  "Data Analysis",
+                  "Mathematics",
+                  "Communication",
+                  "Problem Solving",
+                ],
+              },
+            ].map(({ label, skills }) => (
+              <div key={label}>
+                <p className="text-xs text-neutral-400 dark:text-neutral-600 mb-2">
+                  {label}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-sm px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </section>

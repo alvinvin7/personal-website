@@ -42,3 +42,6 @@ next-env.d.ts
 
 # claude
 .claude/settings.local.json
+
+# local cloudflare preview only — not needed for CF Pages git deploy
+wrangler.toml

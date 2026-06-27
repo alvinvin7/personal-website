@@ -12,8 +12,8 @@ const CATEGORY_ORDER: PlaceCategory[] = [
   "coffee",
   "bar",
   "winery",
-  "nature",
-  "activity",
+  "sightseeing",
+  "stay",
   "parkrun",
 ];
 

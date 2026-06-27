@@ -3,8 +3,8 @@ export type PlaceCategory =
   | "food"
   | "bar"
   | "winery"
-  | "activity"
-  | "nature"
+  | "sightseeing"
+  | "stay"
   | "parkrun";
 
 export type Place = {
@@ -284,7 +284,7 @@ export const places: Place[] = [
   {
     slug: "circular-quay-wharf-3",
     name: "Circular Quay Wharf 3",
-    category: "activity",
+    category: "sightseeing",
     city: "Sydney",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-33.860676,151.211517",
@@ -292,7 +292,7 @@ export const places: Place[] = [
   {
     slug: "bondi-to-coogee-walk",
     name: "Bondi to Coogee Walk",
-    category: "nature",
+    category: "sightseeing",
     city: "Sydney",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-33.9183926,151.2584756",
@@ -301,7 +301,7 @@ export const places: Place[] = [
   {
     slug: "valley-of-the-waters",
     name: "Valley of the Waters Lookout",
-    category: "nature",
+    category: "sightseeing",
     city: "Blue Mountains",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-33.720151,150.3628727",
@@ -309,7 +309,7 @@ export const places: Place[] = [
   {
     slug: "grand-canyon-walking-track",
     name: "Grand Canyon Walking Track",
-    category: "nature",
+    category: "sightseeing",
     city: "Blue Mountains",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-33.649376,150.3214159",
@@ -426,7 +426,7 @@ export const places: Place[] = [
   {
     slug: "the-calile-hotel",
     name: "The Calile Hotel",
-    category: "activity",
+    category: "stay",
     city: "Brisbane",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-27.4566167,153.0403719",
@@ -495,7 +495,7 @@ export const places: Place[] = [
   {
     slug: "castle-hill-kura-tawhiti",
     name: "Castle Hill / Kura Tawhiti Conservation Area",
-    category: "nature",
+    category: "sightseeing",
     city: "Christchurch",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-43.2295617,171.7162282",
@@ -574,7 +574,7 @@ export const places: Place[] = [
   {
     slug: "viengtara-resort",
     name: "ViengTara VangVieng Resort",
-    category: "activity",
+    category: "stay",
     city: "Vang Vieng",
     note: "",
     mapsUrl: "https://maps.google.com/?q=18.9218235,102.444372",
@@ -583,7 +583,7 @@ export const places: Place[] = [
   {
     slug: "avani-luang-prabang",
     name: "Avani+ Luang Prabang Hotel",
-    category: "activity",
+    category: "stay",
     city: "Luang Prabang",
     note: "",
     mapsUrl: "https://maps.google.com/?q=19.8885011,102.1337429",
@@ -617,7 +617,7 @@ export const places: Place[] = [
   {
     slug: "barrique-venice",
     name: "Barrique Venice",
-    category: "bar",
+    category: "food",
     city: "Los Angeles",
     note: "",
     mapsUrl: "https://maps.google.com/?q=33.9931638,-118.4746842",

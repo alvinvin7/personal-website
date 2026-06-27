@@ -11,19 +11,29 @@ const CATEGORY_ORDER: PlaceCategory[] = [
   "food",
   "coffee",
   "bar",
-  "activity",
+  "winery",
   "nature",
+  "activity",
+  "parkrun",
 ];
+
+// These categories render as a flat grid — no city subheadings
+const FLAT_CATEGORIES = new Set<PlaceCategory>(["winery", "parkrun"]);
 
 export default function PlacesPage() {
   const grouped = CATEGORY_ORDER.flatMap((category) => {
     const categoryPlaces = places.filter((p) => p.category === category);
     if (categoryPlaces.length === 0) return [];
 
+    if (FLAT_CATEGORIES.has(category)) {
+      return [{ category, flat: true, cities: [{ city: "", places: categoryPlaces }] }];
+    }
+
     const cities = Array.from(new Set(categoryPlaces.map((p) => p.city)));
     return [
       {
         category,
+        flat: false,
         cities: cities.map((city) => ({
           city,
           places: categoryPlaces.filter((p) => p.city === city),

@@ -80,6 +80,7 @@ function PlaceCard({ place }: { place: Place }) {
 
 type GroupedCategory = {
   category: PlaceCategory;
+  flat: boolean;
   cities: { city: string; places: Place[] }[];
 };
 
@@ -131,25 +132,33 @@ export default function PlacesView({
 
       {view === "list" ? (
         <div className="space-y-12">
-          {grouped.map(({ category, cities }) => (
+          {grouped.map(({ category, flat, cities }) => (
             <div key={category}>
               <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-6">
                 {category}
               </p>
-              <div className="space-y-8">
-                {cities.map(({ city, places }) => (
-                  <div key={city}>
-                    <p className="text-xs uppercase tracking-widest text-neutral-300 dark:text-neutral-600 mb-3">
-                      {city}
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {places.map((place) => (
-                        <PlaceCard key={place.slug} place={place} />
-                      ))}
+              {flat ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {cities[0].places.map((place) => (
+                    <PlaceCard key={place.slug} place={place} />
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-8">
+                  {cities.map(({ city, places }) => (
+                    <div key={city}>
+                      <p className="text-xs uppercase tracking-widest text-neutral-300 dark:text-neutral-600 mb-3">
+                        {city}
+                      </p>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {places.map((place) => (
+                          <PlaceCard key={place.slug} place={place} />
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

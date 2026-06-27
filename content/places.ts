@@ -1,4 +1,11 @@
-export type PlaceCategory = "coffee" | "food" | "bar" | "activity" | "nature";
+export type PlaceCategory =
+  | "coffee"
+  | "food"
+  | "bar"
+  | "winery"
+  | "activity"
+  | "nature"
+  | "parkrun";
 
 export type Place = {
   slug: string;
@@ -311,7 +318,7 @@ export const places: Place[] = [
   {
     slug: "tamburlaine-organic-wines",
     name: "Tamburlaine Organic Wines",
-    category: "bar",
+    category: "winery",
     city: "Hunter Valley",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-32.7830981,151.2998123",
@@ -320,7 +327,7 @@ export const places: Place[] = [
   {
     slug: "lowe-family-wine-co",
     name: "Lowe Family Wine Co",
-    category: "bar",
+    category: "winery",
     city: "Mudgee",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-32.5372264,149.5852415",
@@ -329,7 +336,7 @@ export const places: Place[] = [
   {
     slug: "logan-wines",
     name: "Logan Wines",
-    category: "bar",
+    category: "winery",
     city: "Orange",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-32.6877708,149.7025299",
@@ -480,7 +487,7 @@ export const places: Place[] = [
   {
     slug: "hagley-parkrun",
     name: "Hagley parkrun",
-    category: "activity",
+    category: "parkrun",
     city: "Christchurch",
     note: "",
     mapsUrl: "https://maps.google.com/?q=-43.5285674,172.6229764",
@@ -505,7 +512,7 @@ export const places: Place[] = [
   {
     slug: "east-coast-park-parkrun",
     name: "East Coast Park parkrun",
-    category: "activity",
+    category: "parkrun",
     city: "Singapore",
     note: "",
     mapsUrl: "https://maps.google.com/?q=1.2949434,103.8931212",

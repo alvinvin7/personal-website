@@ -13,7 +13,6 @@ export type Place = {
   category: PlaceCategory;
   city: string;
   note: string;
-  mapsUrl: string;
   images?: string[];
 };
 
@@ -31,7 +30,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8696238,151.2055976",
   },
   {
     slug: "maybe-sammy",
@@ -39,7 +37,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8617706,151.2069595",
   },
   {
     slug: "the-barber-shop",
@@ -47,7 +44,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.869557,151.2059828",
   },
   {
     slug: "old-mates-place",
@@ -55,7 +51,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8695467,151.205153",
   },
   {
     slug: "opera-bar",
@@ -63,7 +58,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8584964,151.2136249",
   },
   {
     slug: "deadwax",
@@ -71,7 +65,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.899319,151.1723418",
   },
   {
     slug: "the-caterpillar-club",
@@ -79,7 +72,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8672489,151.2086816",
   },
   {
     slug: "evies-redfern",
@@ -87,7 +79,6 @@ export const places: Place[] = [
     category: "coffee",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.892701,151.2144219",
   },
   {
     slug: "social-society",
@@ -95,7 +86,6 @@ export const places: Place[] = [
     category: "coffee",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.9055307,151.2036867",
   },
   {
     slug: "quick-brown-fox-eatery",
@@ -103,7 +93,6 @@ export const places: Place[] = [
     category: "coffee",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8694146,151.1947574",
   },
   {
     slug: "rovollo-restaurant",
@@ -111,7 +100,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8683054,151.2093149",
   },
   {
     slug: "morena",
@@ -119,7 +107,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8675318,151.2073445",
   },
   {
     slug: "cin-yen",
@@ -127,7 +114,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8913954,151.1957541",
   },
   {
     slug: "sushi-mori",
@@ -135,7 +121,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8864078,151.2078443",
   },
   {
     slug: "bopp-and-tone",
@@ -143,7 +128,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8668185,151.2064637",
   },
   {
     slug: "maeda-newtown",
@@ -151,7 +135,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.9038085,151.179753",
   },
   {
     slug: "the-gidley",
@@ -159,7 +142,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8692214,151.2101555",
   },
   {
     slug: "rainieris-deli",
@@ -167,7 +149,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8693667,151.129304",
   },
   {
     slug: "pellegrino-2000",
@@ -175,7 +156,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8800003,151.2098913",
   },
   {
     slug: "palace-chinese-restaurant",
@@ -183,7 +163,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8719036,151.2090017",
   },
   {
     slug: "vinh-phat",
@@ -191,7 +170,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8937035,150.9374564",
   },
   {
     slug: "bistro-grenier",
@@ -199,7 +177,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8959953,151.1810454",
   },
   {
     slug: "louie",
@@ -207,7 +184,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.9232022,151.2560188",
   },
   {
     slug: "mensho-tokyo-ramen-sydney",
@@ -215,7 +191,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8696428,151.2065571",
   },
   {
     slug: "four-ate-five",
@@ -223,7 +198,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8881135,151.2132272",
   },
   {
     slug: "takam",
@@ -231,7 +205,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.877065,151.2219388",
   },
   {
     slug: "bar-luca",
@@ -239,7 +212,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.863968,151.211934",
   },
   {
     slug: "black-star-pastry",
@@ -247,7 +219,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8724566,151.2078496",
   },
   {
     slug: "bourke-street-bakery",
@@ -255,7 +226,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8894017,151.2148985",
   },
   {
     slug: "o-bar-and-dining",
@@ -263,7 +233,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8649023,151.207767",
   },
   {
     slug: "cafe-paci",
@@ -271,7 +240,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.8932057,151.1837679",
   },
   {
     slug: "lokha",
@@ -279,7 +247,6 @@ export const places: Place[] = [
     category: "food",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.9109332,151.2019103",
   },
   {
     slug: "circular-quay-wharf-3",
@@ -287,7 +254,6 @@ export const places: Place[] = [
     category: "sightseeing",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.860676,151.211517",
   },
   {
     slug: "bondi-to-coogee-walk",
@@ -295,7 +261,6 @@ export const places: Place[] = [
     category: "sightseeing",
     city: "Sydney",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.9183926,151.2584756",
   },
   // ── Blue Mountains ───────────────────────────────────────────────────────
   {
@@ -304,7 +269,6 @@ export const places: Place[] = [
     category: "sightseeing",
     city: "Blue Mountains",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.720151,150.3628727",
   },
   {
     slug: "grand-canyon-walking-track",
@@ -312,7 +276,6 @@ export const places: Place[] = [
     category: "sightseeing",
     city: "Blue Mountains",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-33.649376,150.3214159",
   },
   // ── Hunter Valley ────────────────────────────────────────────────────────
   {
@@ -321,7 +284,6 @@ export const places: Place[] = [
     category: "winery",
     city: "Hunter Valley",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-32.7830981,151.2998123",
   },
   // ── Mudgee ──────────────────────────────────────────────────────────────
   {
@@ -330,7 +292,6 @@ export const places: Place[] = [
     category: "winery",
     city: "Mudgee",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-32.5372264,149.5852415",
   },
   // ── Orange ──────────────────────────────────────────────────────────────
   {
@@ -339,7 +300,6 @@ export const places: Place[] = [
     category: "winery",
     city: "Orange",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-32.6877708,149.7025299",
   },
   // ── Melbourne ───────────────────────────────────────────────────────────
   {
@@ -348,7 +308,6 @@ export const places: Place[] = [
     category: "food",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.8143727,144.9602655",
   },
   {
     slug: "hectors-deli",
@@ -356,7 +315,6 @@ export const places: Place[] = [
     category: "food",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.8129127,144.9716793",
   },
   {
     slug: "the-cornish-arms",
@@ -364,7 +322,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.7734028,144.9608767",
   },
   {
     slug: "berlin-bar",
@@ -372,7 +329,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.8111309,144.9684355",
   },
   {
     slug: "rooftop-at-qt",
@@ -380,7 +336,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.8134277,144.9678242",
   },
   {
     slug: "dukes-coffee-roasters",
@@ -388,7 +343,6 @@ export const places: Place[] = [
     category: "coffee",
     city: "Melbourne",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-37.816791,144.966162",
   },
   // ── Brisbane ─────────────────────────────────────────────────────────────
   {
@@ -397,7 +351,6 @@ export const places: Place[] = [
     category: "food",
     city: "Brisbane",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-27.4582666,153.0334712",
   },
   {
     slug: "madame-wu",
@@ -405,7 +358,6 @@ export const places: Place[] = [
     category: "food",
     city: "Brisbane",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-27.4682005,153.030418",
   },
   {
     slug: "honto",
@@ -413,7 +365,6 @@ export const places: Place[] = [
     category: "food",
     city: "Brisbane",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-27.4556693,153.0348472",
   },
   {
     slug: "donna-chang",
@@ -421,7 +372,6 @@ export const places: Place[] = [
     category: "food",
     city: "Brisbane",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-27.4717346,153.0245786",
   },
   {
     slug: "the-calile-hotel",
@@ -429,7 +379,6 @@ export const places: Place[] = [
     category: "stay",
     city: "Brisbane",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-27.4566167,153.0403719",
   },
   // ── Adelaide ─────────────────────────────────────────────────────────────
   {
@@ -438,7 +387,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Adelaide",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-34.9341519,138.5993577",
   },
   // ── Cairns ───────────────────────────────────────────────────────────────
   {
@@ -447,7 +395,6 @@ export const places: Place[] = [
     category: "food",
     city: "Cairns",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-16.9239135,145.7786642",
   },
   // ── Hobart ───────────────────────────────────────────────────────────────
   {
@@ -456,7 +403,6 @@ export const places: Place[] = [
     category: "food",
     city: "Hobart",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-42.87352,147.315533",
   },
   {
     slug: "westside-laundry",
@@ -464,7 +410,6 @@ export const places: Place[] = [
     category: "food",
     city: "Hobart",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-42.8863529,147.319673",
   },
   {
     slug: "da-angelo-ristorante",
@@ -472,7 +417,6 @@ export const places: Place[] = [
     category: "food",
     city: "Hobart",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-42.8895707,147.3342184",
   },
   // ── Bruny Island ─────────────────────────────────────────────────────────
   {
@@ -481,7 +425,6 @@ export const places: Place[] = [
     category: "food",
     city: "Bruny Island",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-43.1974642,147.3870853",
   },
   // ── Christchurch ─────────────────────────────────────────────────────────
   {
@@ -490,7 +433,6 @@ export const places: Place[] = [
     category: "parkrun",
     city: "Christchurch",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-43.5285674,172.6229764",
   },
   {
     slug: "castle-hill-kura-tawhiti",
@@ -498,7 +440,6 @@ export const places: Place[] = [
     category: "sightseeing",
     city: "Christchurch",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-43.2295617,171.7162282",
   },
   {
     slug: "the-church-pub",
@@ -506,7 +447,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Christchurch",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-43.5311522,172.6393762",
   },
   // ── Singapore ────────────────────────────────────────────────────────────
   {
@@ -515,7 +455,6 @@ export const places: Place[] = [
     category: "parkrun",
     city: "Singapore",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=1.2949434,103.8931212",
   },
   // ── Bali ─────────────────────────────────────────────────────────────────
   {
@@ -524,7 +463,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Bali",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=-8.6838942,115.162865",
   },
   // ── Khao Lak ─────────────────────────────────────────────────────────────
   {
@@ -533,7 +471,6 @@ export const places: Place[] = [
     category: "food",
     city: "Khao Lak",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=8.0330281,98.8242132",
   },
   // ── Hội An ───────────────────────────────────────────────────────────────
   {
@@ -542,7 +479,6 @@ export const places: Place[] = [
     category: "coffee",
     city: "Hội An",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=15.8783647,108.3298496",
   },
   {
     slug: "bale-well-restaurant",
@@ -550,7 +486,6 @@ export const places: Place[] = [
     category: "food",
     city: "Hội An",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=15.8788131,108.3300623",
   },
   // ── Hanoi ────────────────────────────────────────────────────────────────
   {
@@ -559,7 +494,6 @@ export const places: Place[] = [
     category: "food",
     city: "Hanoi",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=21.0181373,105.8538926",
   },
   // ── Nha Trang ────────────────────────────────────────────────────────────
   {
@@ -568,7 +502,6 @@ export const places: Place[] = [
     category: "bar",
     city: "Nha Trang",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=12.2433961,109.195842",
   },
   // ── Vang Vieng ───────────────────────────────────────────────────────────
   {
@@ -577,7 +510,6 @@ export const places: Place[] = [
     category: "stay",
     city: "Vang Vieng",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=18.9218235,102.444372",
   },
   // ── Luang Prabang ────────────────────────────────────────────────────────
   {
@@ -586,7 +518,6 @@ export const places: Place[] = [
     category: "stay",
     city: "Luang Prabang",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=19.8885011,102.1337429",
   },
   // ── London ───────────────────────────────────────────────────────────────
   {
@@ -595,7 +526,6 @@ export const places: Place[] = [
     category: "food",
     city: "London",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=51.50053,-0.0816008",
   },
   {
     slug: "fallow",
@@ -603,7 +533,6 @@ export const places: Place[] = [
     category: "food",
     city: "London",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=51.50941,-0.1327837",
   },
   {
     slug: "osteria-angelina",
@@ -611,7 +540,6 @@ export const places: Place[] = [
     category: "food",
     city: "London",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=51.5218823,-0.077497",
   },
   // ── Los Angeles ──────────────────────────────────────────────────────────
   {
@@ -620,6 +548,5 @@ export const places: Place[] = [
     category: "food",
     city: "Los Angeles",
     note: "",
-    mapsUrl: "https://maps.google.com/?q=33.9931638,-118.4746842",
   },
 ];

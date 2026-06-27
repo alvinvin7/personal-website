@@ -42,9 +42,11 @@ export default async function PlaceDetail({ params }: Props) {
       </div>
 
       <h1 className="text-3xl font-bold tracking-tight mb-4">{place.name}</h1>
-      <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
-        {place.note}
-      </p>
+      {place.note && (
+        <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8">
+          {place.note}
+        </p>
+      )}
 
       {images.length > 0 && (
         <div

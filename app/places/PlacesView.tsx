@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { Place } from "@/content/places";
+import type { Place, PlaceCategory } from "@/content/places";
 
 function PlaceCard({ place }: { place: Place }) {
   const [photoIdx, setPhotoIdx] = useState(0);
@@ -60,12 +60,7 @@ function PlaceCard({ place }: { place: Place }) {
         </div>
       )}
       <div className="p-4 flex flex-col flex-1">
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <span className="font-medium text-sm">{place.name}</span>
-          <span className="text-xs px-2 py-0.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded shrink-0">
-            {place.category}
-          </span>
-        </div>
+        <p className="font-medium text-sm mb-2">{place.name}</p>
         <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed mb-3 flex-1">
           {place.note}
         </p>
@@ -83,14 +78,17 @@ function PlaceCard({ place }: { place: Place }) {
   );
 }
 
-type GroupedCity = { city: string; places: Place[] };
+type GroupedCategory = {
+  category: PlaceCategory;
+  cities: { city: string; places: Place[] }[];
+};
 
 export default function PlacesView({
   grouped,
   mapEmbedUrl,
   mapsListUrl,
 }: {
-  grouped: GroupedCity[];
+  grouped: GroupedCategory[];
   mapEmbedUrl: string;
   mapsListUrl: string;
 }) {
@@ -132,15 +130,24 @@ export default function PlacesView({
       </div>
 
       {view === "list" ? (
-        <div className="space-y-10">
-          {grouped.map(({ city, places }) => (
-            <div key={city}>
-              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-4">
-                {city}
+        <div className="space-y-12">
+          {grouped.map(({ category, cities }) => (
+            <div key={category}>
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-6">
+                {category}
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {places.map((place) => (
-                  <PlaceCard key={place.slug} place={place} />
+              <div className="space-y-8">
+                {cities.map(({ city, places }) => (
+                  <div key={city}>
+                    <p className="text-xs uppercase tracking-widest text-neutral-300 dark:text-neutral-600 mb-3">
+                      {city}
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {places.map((place) => (
+                        <PlaceCard key={place.slug} place={place} />
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

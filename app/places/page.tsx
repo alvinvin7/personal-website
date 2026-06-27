@@ -1,17 +1,36 @@
 import type { Metadata } from "next";
 import { places, mapEmbedUrl, mapsListUrl } from "@/content/places";
+import type { PlaceCategory } from "@/content/places";
 import PlacesView from "./PlacesView";
 
 export const metadata: Metadata = {
   title: "Places",
 };
 
+const CATEGORY_ORDER: PlaceCategory[] = [
+  "food",
+  "coffee",
+  "bar",
+  "activity",
+  "nature",
+];
+
 export default function PlacesPage() {
-  const cities = Array.from(new Set(places.map((p) => p.city)));
-  const grouped = cities.map((city) => ({
-    city,
-    places: places.filter((p) => p.city === city),
-  }));
+  const grouped = CATEGORY_ORDER.flatMap((category) => {
+    const categoryPlaces = places.filter((p) => p.category === category);
+    if (categoryPlaces.length === 0) return [];
+
+    const cities = Array.from(new Set(categoryPlaces.map((p) => p.city)));
+    return [
+      {
+        category,
+        cities: cities.map((city) => ({
+          city,
+          places: categoryPlaces.filter((p) => p.city === city),
+        })),
+      },
+    ];
+  });
 
   return (
     <div>

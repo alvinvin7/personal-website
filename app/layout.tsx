@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme'),d=document.documentElement;if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){d.classList.add('dark')}else if(t==='light'){d.classList.add('light')}})()` }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100`}
       >
@@ -46,7 +50,7 @@ export default function RootLayout({
               >
                 Alvin Fujito
               </Link>
-              <div className="flex gap-6 text-sm text-neutral-500 dark:text-neutral-400">
+              <div className="flex items-center gap-6 text-sm text-neutral-500 dark:text-neutral-400">
                 <Link
                   href="/about"
                   className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
@@ -71,6 +75,7 @@ export default function RootLayout({
                 >
                   Blog
                 </Link>
+                <ThemeToggle />
               </div>
             </nav>
           </header>

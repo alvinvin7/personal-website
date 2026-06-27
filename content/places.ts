@@ -10,11 +10,11 @@ export type Place = {
   images?: string[];
 };
 
-// Google Maps → your saved list → Share → "Embed a map" → copy the src URL
-export const mapEmbedUrl = "";
+export const mapEmbedUrl =
+  "https://www.google.com/maps/d/embed?mid=1F_I0lplYNoAdVhfaczM97I_Gm9_ZYXU";
 
-// Link to your full Google Maps saved list
-export const mapsListUrl = "https://maps.app.goo.gl/hi5mQffyG75ZF7QW8";
+export const mapsListUrl =
+  "https://www.google.com/maps/d/viewer?mid=1F_I0lplYNoAdVhfaczM97I_Gm9_ZYXU";
 
 export const places: Place[] = [
   {

@@ -60,6 +60,12 @@ export default function RootLayout({
                   Projects
                 </Link>
                 <Link
+                  href="/places"
+                  className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+                >
+                  Places
+                </Link>
+                <Link
                   href="/blog"
                   className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
                 >

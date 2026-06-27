@@ -76,7 +76,7 @@ export default async function PlaceDetail({ params }: Props) {
       )}
 
       <a
-        href={place.mapsUrl}
+        href={`https://maps.google.com/?q=${encodeURIComponent(`${place.name}, ${place.city}`)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1 text-sm border border-neutral-200 dark:border-neutral-800 rounded px-4 py-2 text-neutral-600 dark:text-neutral-400 hover:border-neutral-300 dark:hover:border-neutral-700 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"

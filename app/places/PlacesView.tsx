@@ -65,7 +65,7 @@ function PlaceCard({ place }: { place: Place }) {
           {place.note}
         </p>
         <a
-          href={place.mapsUrl}
+          href={`https://maps.google.com/?q=${encodeURIComponent(`${place.name}, ${place.city}`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
